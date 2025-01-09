@@ -1,13 +1,13 @@
 const container = document.getElementById("array-container");
 let array = [];
-let speed = 50; // Default speed
+let speed = 50; 
 
-// Update speed dynamically from range slider
+
 document.getElementById("speed").addEventListener("input", function () {
-    speed = 101 - this.value; // Inverse: lower value = faster
+    speed = 101 - this.value; 
 });
 
-// Generate a new array of random numbers
+
 function generateArray(size = 50) {
     array = [];
     container.innerHTML = "";
@@ -22,7 +22,7 @@ function generateArray(size = 50) {
     }
 }
 
-// Sleep helper function
+
 async function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
